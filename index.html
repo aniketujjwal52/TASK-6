@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form | Aniket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="form-wrapper">
+    <form id="contactForm" novalidate>
+      <h2>Get in Touch</h2>
+
+      <div class="input-group">
+        <input type="text" id="name" required />
+        <label for="name">Name</label>
+        <small id="nameError" class="error-text"></small>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" required />
+        <label for="email">Email</label>
+        <small id="emailError" class="error-text"></small>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" required></textarea>
+        <label for="message">Message</label>
+        <small id="messageError" class="error-text"></small>
+      </div>
+
+      <button type="submit">Submit</button>
+      <p id="successMessage" class="success-text"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
